@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 2rem;
+    margin: 20px;
+    color: #333;
+}
+#opponent-choice, #your-choice {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #555;
+    border-radius: 10px;
+    background-color: #12b5da;
+    box-shadow: 0 4px 8px rgba(31, 20, 20, 0.2);
+}
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+#choices img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#choices img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+#your-score, #opponent-score {
+    background-color: rgb(19, 139, 195);
+
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+    color: #f3efef;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+#your-choice.active, #opponent-choice.active {
+    border-color: #28a745;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.5);
+}
+.imgContainer{
+    display: flex;
+    gap: 10px;
+}
+.color{
+    background-color: beige;
+}
